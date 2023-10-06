@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
   <body>
-  <?php require("views/navbar/navbar.html");?>
+  <?php require("views/navbar/navbar.php");?>
   <h1 id="call_to_action">DKVDEV: Building trust and fortifying your digital presences with secure websites</h1>
   <br><br><br><br><br><br><br><br><br><br>
   <?php require("views/footer/footer.html");?>

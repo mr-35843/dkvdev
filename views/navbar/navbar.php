@@ -23,4 +23,5 @@
 	      </div>
 	    </div>
 	    </nav>
+<script src="globals.js"></script>
 <script src="views/navbar/navbar.js"></script>

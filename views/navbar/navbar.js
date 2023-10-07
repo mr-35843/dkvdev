@@ -1,10 +1,4 @@
-async function loadText(path){
-  const response = await fetch(path)
-  const json = await response.json();
-  return json
-}
-
-async function renderText(){
+async function navbar_renderText(){
 const dictionaryPath= "/views/navbar/navbar-translation-en.json";
 const path = protocol+host+dictionaryPath;
 const NAVBAR = await loadText(path);
@@ -16,4 +10,4 @@ document.getElementById("navbar_buttonThree").innerHTML=NAVBAR.BUTTON_THREE;
 document.getElementById("navbar_buttonFour").innerHTML=NAVBAR.BUTTON_FOUR;
 }
 
-renderText();
+navbar_renderText();

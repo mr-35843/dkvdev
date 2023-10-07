@@ -1,10 +1,4 @@
-async function loadText(path){
-  const response = await fetch(path)
-  const json = await response.json();
-  return json
-}
-
-async function renderText(){
+async function index_renderText(){
     const dictionaryPath= "/views/index/index-translation-en.json";
     const path = protocol+host+dictionaryPath;
     const INDEX = await loadText(path);
@@ -17,4 +11,4 @@ async function renderText(){
     document.getElementById("index-article").innerHTML=INDEX.ARTICLE_CONTENT;
 }
 
-renderText();
+index_renderText();

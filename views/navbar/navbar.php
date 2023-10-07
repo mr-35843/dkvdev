@@ -23,5 +23,6 @@
 	      </div>
 	    </div>
 	    </nav>
-<script src="globals.js"></script>
+<script src="js/globals.js"></script>
+<script src="js/helperFunctions.js"></script>
 <script src="views/navbar/navbar.js"></script>

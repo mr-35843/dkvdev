@@ -34,14 +34,14 @@ class Products {
           echo '<div class="col-sm-6 col-md-4 col-lg-3">';
           echo '
          
-          <img class="img-fluid" src="images/'.$product->name.IMAGE_EXTENSION.'" alt="">
+          <img class="img-fluid" src="images/'.$product->id.IMAGE_EXTENSION.'" alt="">
           
               <form action="" method="post">
                   <label>'.$product->name.'</label>
                   <label>'.$product->description.'</label>
                   <label>'.zeroPadPrice($product->price).' '.$cfg->file->currencySymbol.'</label>
                   <br>
-                  <input type="submit" class="btn btn-success" name="add_to_cart_submit-featured-'.$product->name.'" value="Add to cart">
+                  <input type="submit" class="btn btn-success" name="add_to_cart_submit-product-'.$product->id.'" value="Add to cart">
               </form>
           ';
           echo "</div>";

@@ -1,0 +1,27 @@
+{
+    "protocol":"http://",
+    "host": "",
+    "language":"EN",
+    "currencySymbol":"€",
+
+    "featuredProducts":
+    [
+        "65268926d5635.json",
+        "6526894f1e47f.json",
+        "65268972c4c01.json"
+    ],
+
+    "marketStallHeader":"AI Made This - Limited Edition",
+    "marketStallArticle":"Limited Edition collection, where Generative AI collaborates with creative talent. AI Made This is more more",
+    "marketStallImage":"indexArticleImage",
+
+    "products":
+    [
+        "uuid.json"
+    ],
+
+    "marketStallComments":
+    [
+
+    ]
+}

@@ -31,18 +31,25 @@ class FeaturedProducts{
     //render featured products
     foreach($this->products as $product){
       global $cfg;
-      echo '<div class="col-md-4">';
+      echo '<div class="col-md-4  product featured-product">';
       echo '
-     
+      
       <img class="img-fluid" src="images/'.$product->id.IMAGE_EXTENSION.'" alt="">
       
           <form action="" method="post">
-              <label>'.$product->name.'</label>
-              <label>'.$product->description.'</label>
-              <label>'.zeroPadPrice($product->price).' '.$cfg->file->currencySymbol.'</label>
-              <br>
+              <label>'.zeroPadPrice($product->price).' '.$cfg->file->currencySymbol.'</label><br>
+              <label>'.$product->name.'</label><br>
+              <label>'.$product->description.'</label><br>
+              <div class="row">
+              <div class="col-6">
+              <input type="submit" class="btn btn-primary" name="buy-now_submit-featured-'.$product->id.'" value="Buy Now"">
+              </div>
+              <div class="col-6">
               <input type="submit" class="btn btn-success" name="add_to_cart_submit-featured-'.$product->id.'" value="Add to cart">
+              </div>
+              </div>
           </form>
+          <p class="featured-counter"style="font-size: small;"><i>Limited edition: only '.$product->quantity.' remaining.</i></p>
       ';
       echo "</div>";
     }

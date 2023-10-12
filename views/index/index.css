@@ -1,11 +1,81 @@
 article{
     min-height: 600px;
 }
+a {
+  font-family: 'Open Sans', sans-serif;
+}
+#navbar_brand{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+nav{
+  -webkit-box-shadow: -5px 5px 5px -4px rgba(99,99,99,1);
+  -moz-box-shadow: -5px 5px 5px -4px rgba(99,99,99,1);
+  box-shadow: -5px 5px 5px -4px rgba(99,99,99,1);
+}
+h1, h2, h3, h4, h5, h6, button, form{
+  font-family: 'Tilt Neon', sans-serif;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+input {
+  -webkit-box-shadow: -5px -4px 5px -4px rgba(99,99,99,1);
+-moz-box-shadow: -5px -4px 5px -4px rgba(99,99,99,1);
+box-shadow: -5px -4px 5px -4px rgba(99,99,99,1);
+}
+
+.product{
+  text-align: center;
+  font-family: 'Tilt Neon', sans-serif;
+  margin-bottom:0.5em;
+}
+.img-fluid{
+  -webkit-box-shadow: -5px -4px 5px -4px rgba(99,99,99,1);
+-moz-box-shadow: -5px -4px 5px -4px rgba(99,99,99,1);
+box-shadow: -5px -4px 5px -4px rgba(99,99,99,1);
+}
+.card {
+  margin-top: 0.25em !important;
+  margin-bottom: 0.25em !important;
+  background-color: #f2f2f2;
+  -webkit-box-shadow: -5px -4px 5px -4px rgba(99,99,99,1);
+-moz-box-shadow: -5px -4px 5px -4px rgba(99,99,99,1);
+box-shadow: -5px -4px 5px -4px rgba(99,99,99,1);
+}
+.comment-profile{
+  border-radius: 50%;
+}
 #callToAction {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-    text-align: center;
+    font-family: 'Tilt Neon', sans-serif;
 }
+
+#mainArticle, #comments{
+  max-width: 100%;
+  background-color: #f2f2f2;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  border-radius: 8px;
+  color: #252525;
+  text-align: justify;
+  -webkit-box-shadow: -5px -4px 5px -4px rgba(99,99,99,1);
+-moz-box-shadow: -5px -4px 5px -4px rgba(99,99,99,1);
+box-shadow: -5px -4px 5px -4px rgba(99,99,99,1);
+}
+#mainArticle h2, p{
+margin: 1em;
+}
+
+#comments h2, h3, p {
+  margin: 1em;
+}
+#comments input{
+  margin: 2em;
+}
+
 
 .fade-in {
     animation: fadeIn ease 4s;
@@ -54,6 +124,7 @@ article{
   .type-header{
     margin-top: 0.5em;
     margin-bottom: 0.5em;
+    font-family: 'Tilt Neon', sans-serif;
   }
   /* The typing effect */
   @keyframes typing {

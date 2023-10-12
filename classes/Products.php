@@ -31,15 +31,15 @@ class Products {
         //render  products
         foreach($this->inStock as $product){
           global $cfg;
-          echo '<div class="col-sm-6 col-md-4 col-lg-3">';
+          echo '<div class="col-sm-6 col-md-4 col-lg-3 product">';
           echo '
          
           <img class="img-fluid" src="images/'.$product->id.IMAGE_EXTENSION.'" alt="">
           
               <form action="" method="post">
-                  <label>'.$product->name.'</label>
+                  <label>'.zeroPadPrice($product->price).' '.$cfg->file->currencySymbol.'</label><br>
+                  <label>'.$product->name.'</label><br>
                   <label>'.$product->description.'</label>
-                  <label>'.zeroPadPrice($product->price).' '.$cfg->file->currencySymbol.'</label>
                   <br>
                   <input type="submit" class="btn btn-success" name="add_to_cart_submit-product-'.$product->id.'" value="Add to cart">
               </form>

@@ -10,11 +10,13 @@ require("classes/Config.php");
 require("classes/ShoppingCart.php");
 require("classes/FeaturedProducts.php");
 require("classes/Products.php");
+require("classes/Comments.php");
 //INITIALIZING OBJECTS
 $cfg = new Config();
 $cart = new ShoppingCart();
 $featuredProducts = new FeaturedProducts($cfg->file);
 $products = new Products();
+$comments = new Comments();
 //APPLICATION
 $featuredProducts->handleSubmits($cart); //creates POST event handlers for featured products add to cart buttons.
 ?>
@@ -26,6 +28,9 @@ $featuredProducts->handleSubmits($cart); //creates POST event handlers for featu
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DKVDEV CODESPACE</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Tilt+Neon&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
   </head>
   <body>
   <?php require("views/navbar/navbar.php");

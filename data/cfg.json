@@ -12,16 +12,6 @@
     ],
 
     "marketStallHeader":"AI Made This - Limited Edition",
-    "marketStallArticle":"Limited Edition collection, where Generative AI collaborates with creative talent. AI Made This is more more",
-    "marketStallImage":"indexArticleImage",
-
-    "products":
-    [
-        "uuid.json"
-    ],
-
-    "marketStallComments":
-    [
-
-    ]
+    "marketStallArticle":"<p> When it comes to creative collaboration, generative AI has emerged as a remarkable tool that unites artists, developers, and entrepreneurs. Brace yourself for a collection of artworks that seamlessly blend the realms of graphic artistry and prompt engineering. AI Made this - A testament to the awe-inspiring potential of generative AI. <br><br>Our products are delivered on 1.5'' thick museum-quality canvas in polyester-cotton blend. Hand-stretched around a hardwood frame with ready to hang hardware. Matte finish with ultra low glade.<br><br>Don't miss out on your favorite artworks in this limited collection. Only 10 will ever be made.  </p>",
+    "marketStallImage":"indexArticleImage"
 }

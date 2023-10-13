@@ -19,12 +19,19 @@ class FeaturedProducts{
 
   function handleSubmits($cart){
     //event handlers featured products.
-    foreach($this->products as $product){
+    foreach($this->products as $product){ //add to cart
       $pointer = "add_to_cart_submit-featured-$product->id";
         if(isset($_POST[$pointer])){
           $cart->addItem($product->id, $product->name, $product->price, 1);
         }
       }
+      foreach($this->products as $product){ //buy-now
+        $pointer = "buy-now_submit-featured-$product->id";
+          if(isset($_POST[$pointer])){
+            $cart->addItem($product->id, $product->name, $product->price, 1);
+            header("Location: checkout.php");
+          }
+        }
   }
 
   function renderProducts(){

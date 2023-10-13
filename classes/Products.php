@@ -49,6 +49,18 @@ class Products {
 
     }
 
+    function create($productDetails){ 
+    //write to filesystem.
+    $filePath = $productDetails["productId"].".json";
+    echo $filePath;
+    $pointer = fopen($filePath, "x") or die("Unable to open file.");
+    fwrite($pointer, json_encode($productDetails));
+    fclose($pointer);
+    //move and rename images
+    move_uploaded_file($_FILES["product_image_a"]["tmp_name"], $productDetails["productId"]."json");
+    move_uploaded_file($_FILES["product_image_b"]["tmp_name"], $productDetails["productId"]."json");    
+    }
+
 
 }
 ?>
